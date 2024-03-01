@@ -35,7 +35,7 @@
     right: 0;
     background-color:var(--icon_color);
     transform: rotate(45deg);
-    animation: icon_animation 2s linear infinite;
+    animation: icon_animation 1.5s linear infinite;
 }
 .loading_icon_1::after{
     content:'';
@@ -56,10 +56,10 @@
     transform: translate(var(--icon_width_move),var(--icon_width_move));
 }
 @keyframes icon_animation{
-    0%,20%,40%,60%,100%{
+    0%,20%,30%,50%,100%{
         transform: rotate(45deg) scale(1,1);
     }
-    10%,50%{
+    10%,40%{
         transform: rotate(45deg) scale(0.7,0.7);
     }
 }
@@ -75,13 +75,13 @@
     height: var(--icon_width);
     border-radius: 50%;
     border: 0.5rem solid var(--icon_color);
-    animation:icon_circle_animation 2s linear infinite;
+    animation:icon_circle_animation 1.5s linear infinite;
 }
 @keyframes icon_circle_animation {
-    0%,20%,40%,60%,100%{
+    0%,20%,30%,50%,100%{
         transform:scale(0.7,0.7);
     }
-    10%,50%{
+    10%,40%{
         transform:scale(1.8,1.8);
     }
 }

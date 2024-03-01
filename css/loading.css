@@ -1,0 +1,105 @@
+:root{
+    --icon_box_width:30vw;
+    --icon_width:10vw;
+    --icon_width_move:5vw;
+    --icon_color:rgb(232, 152, 87);
+    --icon_bgc:rgb(171, 43, 43);
+}
+.loading{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite;
+}
+.loading_icon{
+    position: relative;
+    display: flex;
+    width: var(--icon_box_width);
+    height: var(--icon_box_width);
+    background-color: var(--icon_bgc);
+}
+.loading_icon_1{
+    position: absolute;
+    display: flex;
+    width: var(--icon_width);
+    height: var(--icon_width);
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:var(--icon_color);
+    transform: rotate(45deg);
+    animation: icon_animation 1.5s linear infinite;
+}
+.loading_icon_1::after{
+    content:'';
+    position: absolute;
+    display: flex;
+    width: var(--icon_width);
+    height: var(--icon_width);
+    background-color: var(--icon_color);
+    transform: translate(calc(-1*var(--icon_width_move)),calc(-1*var(--icon_width_move)));
+}
+.loading_icon_1::before{
+    content:'';
+    position: absolute;
+    display: flex;
+    width: var(--icon_width);
+    height: var(--icon_width);
+    background-color: var(--icon_color);
+    transform: translate(var(--icon_width_move),var(--icon_width_move));
+}
+@keyframes icon_animation{
+    0%,20%,30%,50%,100%{
+        transform: rotate(45deg) scale(1,1);
+    }
+    10%,40%{
+        transform: rotate(45deg) scale(0.7,0.7);
+    }
+}
+.loading_icon_circle{
+    position: absolute;
+    display: flex;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: var(--icon_width);
+    height: var(--icon_width);
+    border-radius: 50%;
+    border: 0.5rem solid var(--icon_color);
+    animation:icon_circle_animation 1.5s linear infinite;
+}
+@keyframes icon_circle_animation {
+    0%,20%,30%,50%,100%{
+        transform:scale(0.7,0.7);
+    }
+    10%,40%{
+        transform:scale(1.8,1.8);
+    }
+}
+
+.loading_text{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: var(--icon_box_width);
+    background-color: var(--icon_bgc);
+}
+.loading_text>p {
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    color: var(--icon_color);
+}

@@ -1,0 +1,11 @@
+:root{
+    --text_color:rgb(16, 15, 15);
+    --text_small:0.5rem;
+    --text_middle:1rem;
+    --text_big:1.5rem;
+}
+html,body{
+    margin: 0;
+    font-size: var(--text_middle);
+    color: var(--text_color);
+}

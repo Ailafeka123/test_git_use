@@ -3,6 +3,7 @@
     --text_small:0.5rem;
     --text_middle:1rem;
     --text_big:1.5rem;
+    --bg_color:rgb(232, 152, 87);
 }
 html,body{
     margin: 0;

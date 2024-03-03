@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./css/loading.css">
 </head>
 <body>
+    <!-- loading -->
     <div id="loading" class="loading">
         <div class="loading_icon">
             <div id="loading_end" class="loading_end"></div>
@@ -24,9 +25,81 @@
             <p class="">loading</p>
         </div>
     </div>
-    <nav></nav>
-
-    <script src="./js/index.js"></script>
+    <!-- loading結束 -->
+    <!-- 選單 -->
+    <nav class="nav_box">
+        <div class="left_menu">
+            <p><a href="#">履歷表</a></p>
+        </div>
+        <div class="mid_menu">
+            
+        </div>
+        <div class="right_menu">
+            <ul>
+                <li><a href="#myself">自我介紹</a></li>
+                <li><a href="#project">作品</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- 選單結束 -->
+    <!-- 返回置頂按鈕 -->
+    <a class="top_button" href="#"><img src="./img/svg/arrow_upward.svg"></a>
+    <!-- 主內容 -->
+    <main id="main" class="main_hidden">
+        <div class="g_2" id="myself">
+            <div class="f_center">
+                <img src="./img/self.jpg" class="face_img">
+            </div>
+            <div class="f_text">
+                <h1>個人資訊</h1>
+                <p>姓名:劉星緯</p>
+                <p>生日:1999/06/08</p>
+                <h1>自我介紹</h1>
+                <p>以全端工程師為目標</p>
+            </div>
+        </div>
+        <div class="g_2" id="history">
+            <div class="f_center">
+                <h1>經歷</h1>
+            </div>
+            <div class="f_text">
+                <h3>國立中央大學-生命科學系</h3>
+                <p>2017/08~2021/06</p>
+                <h3>入伍當兵</h3>
+                <p>2021/10~2023/05</p>
+            </div>
+        </div>
+        <div class="g_2">
+            <div class="f_center">
+                <h1>相關技能</h1>
+            </div>
+            <div class="f_text">
+                <h3>前端</h3>
+                <p>JavaScript</p>
+                <p>Css</p>
+                <p>Boostrap</p>
+                <h3>後端</h3>
+                <p>MAMP</p>
+            </div>
+        </div>
+        <div class="f_center" id="project">
+            <h1>作品集</h1>
+        </div>
+    </main>
+    <!-- 主內容結束 -->
+    <!-- 置底 -->
+    <footer>
+        <div>
+            <p>Copyright© 劉星緯 2024</p>
+        </div>
+        <div>
+            <p>通知方式:</p>
+            <p>信箱:ailafe@gmail.com</p>
+            <p>電話:0917-871-819</p>
+            <p>時間:1000~2000</p>
+        </div>
+    </footer>
     <script src="./js/loading.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>

@@ -6,7 +6,7 @@
     --icon_bgc:rgb(171, 43, 43);
 }
 .loading{
-    position: relative;
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,6 +16,7 @@
     height: 100vh;
     background-color: antiquewhite;
     transition: opacity 0.5s;
+    z-index: 999;
     overflow: hidden;
 }
 .loading_icon{
@@ -117,6 +118,11 @@
     right: 0;
     background-color:var(--icon_color);
     transform: scale(0,0);
-    z-index: 99;
+    z-index: 9999;
     transition: all 1s;
+}
+
+.main_hidden{
+    height: 10px;
+    overflow: hidden;
 }

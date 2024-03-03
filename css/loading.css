@@ -16,6 +16,7 @@
     height: 100vh;
     background-color: antiquewhite;
     transition: opacity 0.5s;
+    overflow: hidden;
 }
 .loading_icon{
     position: relative;

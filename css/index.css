@@ -87,7 +87,7 @@ main{
     margin: 1rem 0 0 0 ;
     display: grid;
     gap: 1rem;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2,1fr);
 }
 .f_center{
     display: flex;
@@ -140,4 +140,48 @@ footer > div {
     footer > div {
         align-items: center;
     }
+}
+.f_col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.f_row_25{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: aqua;
+    gap: 1rem;
+}
+.f_row_25 > div{
+    flex: 25%;
+}
+.project_box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.project_box > img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+.project_text{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    background-color: rgba(232, 232, 232,0.7);
+    transition: all 0.5s;
+}
+.project_text.active{
+    top: 0;
 }
